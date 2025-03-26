@@ -1,0 +1,22 @@
+{
+  "name": "chrome-global-access",
+  "version": "1.0.0",
+  "description": "A minimal Chrome extension that provides direct access to the chrome global for development and experimentation.",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "development",
+    "tools"
+  ],
+  "author": "Chrome Global Access Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chrome": "^0.0.312",
+    "typescript": "^5.8.2"
+  }
+}

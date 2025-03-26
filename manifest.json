@@ -1,0 +1,61 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Global Access",
+  "version": "1.0.0",
+  "version_name": "1.0.0 - Development Environment",
+  "description": "A minimal development environment for Chrome Extension APIs. Provides direct access to the chrome global for rapid prototyping and experimentation.",
+  "author": "raphaelrk",
+  "minimum_chrome_version": "88",
+  "permissions": [
+    "tabs",
+    "storage",
+    "scripting",
+    "debugger",
+    "webRequest",
+    "webNavigation",
+    "cookies",
+    "history",
+    "bookmarks",
+    "downloads",
+    "system.cpu",
+    "system.memory",
+    "system.storage",
+    "activeTab",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "file:///*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content-script.js"
+      ],
+      "matches": [
+        "<all_urls>",
+        "*://*/*",
+        "file:///*"
+      ],
+      "run_at": "document_start",
+      "match_about_blank": true,
+      "match_origin_as_fallback": true
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
