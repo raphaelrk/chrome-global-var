@@ -1,5 +1,5 @@
 {
-  "name": "chrome-global-access",
+  "name": "chrome-global-var",
   "version": "1.0.0",
   "description": "A minimal Chrome extension that provides direct access to the chrome global for development and experimentation.",
   "type": "module",
@@ -13,10 +13,18 @@
     "development",
     "tools"
   ],
-  "author": "Chrome Global Access Team",
+  "author": "raphaelrk",
   "license": "MIT",
   "devDependencies": {
     "@types/chrome": "^0.0.312",
     "typescript": "^5.8.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphaelrk/chrome-global-var.git"
+  },
+  "bugs": {
+    "url": "https://github.com/raphaelrk/chrome-global-var/issues"
+  },
+  "homepage": "https://github.com/raphaelrk/chrome-global-var#readme"
 }

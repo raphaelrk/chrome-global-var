@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Chrome Global Access",
+  "name": "Chrome Global Var",
   "version": "1.0.0",
   "version_name": "1.0.0 - Development Environment",
-  "description": "A minimal development environment for Chrome Extension APIs. Provides direct access to the chrome global for rapid prototyping and experimentation.",
-  "author": "raphaelrk",
+  "description": "A minimal Chrome extension that provides direct access to the chrome global for development and experimentation.",
+  "author": "Chrome Global Var Team",
   "minimum_chrome_version": "88",
   "permissions": [
     "tabs",
@@ -21,7 +21,9 @@
     "system.memory",
     "system.storage",
     "activeTab",
-    "contextMenus"
+    "contextMenus",
+    "management",
+    "notifications"
   ],
   "host_permissions": [
     "<all_urls>",
