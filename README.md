@@ -2,6 +2,8 @@
 
 A minimal Chrome extension that provides direct access to the `chrome` global for development and experimentation.
 
+[View on GitHub](https://github.com/raphaelrk/chrome-global-var)
+
 ## Features
 
 - Direct access to `chrome` global in DevTools console
